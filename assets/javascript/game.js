@@ -16,6 +16,8 @@ function handler(e){
 	if(guessesLeft == 0){
 		losses +=1;
 		guessesLeft = 10;
+		randomLetter();
+		guessString = "";
 	}
 	
 	if(keyPressed == secretLetter){
